@@ -1,0 +1,302 @@
+<!--
+ * Kızılay Web Tasarim Bitirme Projesi
+ * HUSSAM ALDARWISH
+ * +90 531 014 7060
+ * hussam.aldarwish@hotmail.com
+ * -------------------------------------------------------------------------------------
+-->
+
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="İletişim | ITQAN">
+    <meta name="description"
+        content="Profesyonel Kodlama Hizmetleri, Web Tasrım hizmetleri, Yazılım Geliştirme, Mobile Uygulamalar">
+    <meta name="keywords"
+        content="hosting,back-end,arka-uç,kodlama,tasarım,design,software,yazılım,uygulama,html,css,c#,sql,mysql,php,front-end">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="author" content="HUSSAM ALDARWISH">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>İletişim | ITQAN</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <!-- Header: Top Bar -->
+    <section id="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-4 my-auto">
+                    Profesyonel Kodlama Hizmetleri
+                </div>
+                <div id="date" class="col-md-4 d-none d-md-block my-auto text-center"> </div>
+                <div class="col-6 col-md-4 social-links my-auto text-end">
+                    <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="http://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="http://pintrest.com" target="_blank"><i class="fab fa-pinterest"></i></a>
+                    <a href="http://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="http://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Header: Top Bar -->
+
+    <!-- Header: Site Menu -->
+    <section id="navbar" class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light text-dark bg-light" aria-label="Main navigation">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="ITQAN logo"></a>
+
+                <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="offcanvas"
+                    aria-label="Toggle navigation">
+                    Site Menüsü <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse offcanvas-collapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Ana Sayfa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Hakkimizda.html" class="nav-link">Hakkımızda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Bloglar.html" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Galeri.html" class="nav-link">Galeri</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Hesaplamalar.html" class="nav-link">Hesaplamalar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Haberler.html" class="nav-link">Haberler</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="iletisim.html" class="nav-link active">İletişim</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex searchbar justify-content-center">
+                        <input class="search_input" type="search" placeholder="Arama..." aria-label="Search">
+                        <button class="search_icon" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- /Header -->
+
+    <!-- Content -->
+
+    <!-- banner -->
+    <section id="iletisim-banner" class="banner">
+        <div class="container">
+            <div class="row">
+                <h1>İletişim</h1>
+            </div>
+        </div>
+    </section>
+    <!-- /banner -->
+
+    <section id="iletisim" class="my-3">
+        <div class="container">
+            <div class="row g-1">
+                <div class="col-md-6 mt-3">
+                    <h2 class="mb-3">İletişim Formu</h2>
+                    <div class="input-group my-2">
+                        <label for="adısoyadı" class="input-group-text">Adınız Soyadınız</label>
+                        <input type="text" id="adısoyadı" class="form-control" required>
+                    </div>
+                    <div class="input-group my-2">
+                        <label for="telefon" class="input-group-text">Telefon</label>
+                        <input type="text" id="telefon" class="form-control" required>
+                    </div>
+                    <div class="input-group my-2">
+                        <label for="Eposta" class="input-group-text">Eposta</label>
+                        <input type="email" id="Eposta" class="form-control" required>
+                    </div>
+                    <div class="input-group my-2">
+                        <label for="comment" class="input-group-text">Mesajınız</label>
+                        <textarea class="form-control" name="comment" id="comment" cols="45" rows="5"
+                            required></textarea>
+                    </div>
+                    <div class="form-check mb-3">
+                        <label class="form-check-label" for="save">
+                            Bir dahaki sefere yorum yaptiğimda kullanilmak üzere adimi ve e-posta adresimi bu
+                            tarayiciya kaydet.
+                        </label>
+                        <input class="form-check-input" type="checkbox" value="" id="save">
+                    </div>
+                    <div class="text-center"><button class="btn btn-dark w-100" type="submit">Gönder</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center my-auto d-none d-md-block"><img src="img/customer-support.jpg"
+                        alt="iletişim" class="w-75">
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-12">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d96300.07927346988!2d28.564472!3d41.0388736!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cadcad25899023%3A0xa053e0b7ec57d6!2sAr%C4%B1%20Bilgi%20Bili%C5%9Fim%20Teknolojileri%20Akademisi!5e0!3m2!1sen!2str!4v1610200865960!5m2!1sen!2str"
+                        width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="row text-center fs-2">
+                <div class="col-md-6 ">
+                    <i class="fas fa-envelope"></i><a href="mailto:info@aribilgi.com">info@aribilgi.com</a>
+                </div>
+                <div class="col-md-6">
+                    <i class="fas fa-phone-alt"></i><a href="tel:+902164914274">0216 491 4274</a>
+                </div>
+            </div>
+    </section>
+
+
+
+    <!-- Referanslarımız -->
+    <section id="referanslar" class="mt-3 pb-3">
+        <div class="container-fluid">
+            <div class="row border-bottom border-top border-2 py-3 bg-light">
+                <h2 class="text-center">Referanslarımız</h2>
+            </div>
+        </div>
+        <div class="container mt-3">
+            <div class="d-flex flex-wrap justify-content-center">
+                <img src="img/Ziraat_BankasY_logo.jpg" alt="">
+                <img src="img/isbank-logo.jpg" alt="">
+                <img src="img/ptt-logo.jpg" alt="">
+                <img src="img/vakifbank-logo.jpg" alt="">
+                <img src="img/yapi-kredi-logo.jpg" alt="">
+                <img src="img/halkbank-logo.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- /Referanslarımız -->
+
+
+    <!-- cta -->
+    <section id="cta">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row g-3 my-auto">
+                        <div class="col-2 text-end my-auto"> <i class="fas fa-envelope-open-text fa-3x"></i>
+                        </div>
+                        <div class="col-10">
+                            <p>
+                                <span class="fs-4">ITQAN E-Bültene Üye Olun</span>
+                                <br>
+                                <small>Güncel haber ve kampayalar hakkında bilgi almak için</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 my-auto">
+                    <form class="d-flex justify-content-center">
+                        <div class="d-flex flex-column w-75">
+                            <input type="text" id="Name" class="form-control" placeholder="Adınız Soyadınız">
+                            <input type="email" id="Email" class="form-control" placeholder="Eposta Adresinizi"
+                                required>
+                        </div>
+                        <button type="submit" class="btn btn-dark">Gönder</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /cta -->
+
+    <!-- footer -->
+    <section id="footer" class="bg-dark text-white">
+        <div class="container pt-4">
+            <div class="row">
+                <div class="col-8 col-md-4 mb-4">
+                    <h3>Bize Ulaşın</h3>
+                    <ul>
+                        <li><i class="far fa-building"></i><span>ITQAN<br>Profesyonel Kodlama Hizmetleri</span></li>
+                        <li><i class="fas fa-phone-alt"></i><a href="tel:+902164914274">0216 491 4274</a></li>
+                        <li><i class="fas fa-envelope"></i><a href="mailto:info@aribilgi.com">info@aribilgi.com</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i><span>Gazi Paşa Caddesi Ihlamur Sokak<br>Has İş Merkezi
+                                No:28 Kat :4<br>34890 Pendik, İstanbul</span></li>
+                    </ul>
+                </div>
+                <div class="col-4 col-md-3 mb-4">
+                    <h3>Menü</h3>
+                    <ul>
+                        <li class="nav-item"><a href="index.html">Ana Sayfa</a> </li>
+                        <li class="nav-item"><a href="Hakkimizda.html">Hakkımızda</a> </li>
+                        <li class="nav-item"><a href="Bloglar.html">Blog</a> </li>
+                        <li class="nav-item"><a href="Galeri.html">Galeri</a> </li>
+                        <li class="nav-item"><a href="Hesaplamalar.html">Hesaplamalar</a> </li>
+                        <li class="nav-item"><a href="Haberler.html">Haberler</a> </li>
+                        <li class="nav-item active"><a href="iletisim.html">İletişim</a> </li>
+                    </ul>
+
+                </div>
+                <div class="col-12 col-md-5 mb-4">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d96300.07927346988!2d28.564472!3d41.0388736!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cadcad25899023%3A0xa053e0b7ec57d6!2sAr%C4%B1%20Bilgi%20Bili%C5%9Fim%20Teknolojileri%20Akademisi!5e0!3m2!1sen!2str!4v1610200865960!5m2!1sen!2str"
+                        width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sub-footer" class="bg-light">
+        <div class="container py-3 bg-light text-center">
+            <div class="row">
+                <div class="social-links my-auto">
+                    <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="http://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="http://pintrest.com" target="_blank"><i class="fab fa-pinterest"></i></a>
+                    <a href="http://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="http://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+                <span>ITQAN 2021 &copy; Her Hakkı Saklıdır<br>
+                    <a href="mailto:hussam.aldarwish@hotmail.com">HUSSAM ALDADRWISH</a> Tarafından Düzenlemiştir<br>
+                    Eğitmen: <a href="https://www.kapawebtasarim.com/">Kaan Pamukçu</a> | <a
+                        href="http://www.aribilgi.com/">Arı Bilgi Bilişim Teknolojileri Akademisi</a>
+                </span>
+            </div>
+        </div>
+    </section>
+    <!-- /footer -->
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script JS -->
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>

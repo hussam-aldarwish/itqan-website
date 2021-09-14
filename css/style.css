@@ -1,0 +1,471 @@
+/*!
+ * Kızılay Web Tasarim Bitirme Projesi
+ * HUSSAM ALDARWISH
+ * +90 531 014 7060
+ * hussam.aldarwish@hotmail.com
+ * -----------------------------------
+ */
+
+/* değişkenlerim 
+* ------------------------------------
+*/
+:root {
+  --facebook-formal-color: #3b5998;
+  --twitter-formal-color: #1da1f2;
+  --youtube-formal-color: #ff0000;
+  --instagram-formal-color: #c32aa3;
+  --pinterest-formal-color: #bd081c;
+  --linkedin-formal-color: #0a66c2;
+  --whatsapp-formal-color: #25d366;
+  --skype-formal-color: #00aff0;
+  --telegram-formal-color: #0088cc;
+  --github-formal-color: #333;
+}
+
+/* social-links 
+* ------------------------------------
+*/
+
+[class*="facebook"] {
+  color: var(--facebook-formal-color);
+}
+[class*="twitter"] {
+  color: var(--twitter-formal-color);
+}
+[class*="instagram"] {
+  color: var(--instagram-formal-color);
+}
+[class*="pinterest"] {
+  color: var(--pinterest-formal-color);
+}
+[class*="github"] {
+  color: var(--github-formal-color);
+}
+[class*="youtube"] {
+  color: var(--youtube-formal-color);
+}
+
+/* Genel Css Attributes
+* ------------------------------------
+*/
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.social-links a {
+  color: inherit;
+  text-decoration: inherit;
+}
+h1 {
+  font-size: 31px;
+}
+h2 {
+  font-size: 25px;
+}
+h3 {
+  font-size: 20px;
+}
+h4 {
+  font-size: 18px;
+}
+
+.banner {
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: overlay;
+  margin-bottom: 30px;
+  background-position: center;
+}
+
+.banner .container,
+.banner .container .row {
+  height: 100%;
+}
+.banner .container .row h1 {
+  font-weight: 400;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #fff;
+  text-align: center;
+  font-size: 34px;
+}
+
+/* 
+text-justify, en son Bootstrap sürümünde mevcut değildir
+*/
+.text-justify {
+  text-align: justify;
+}
+
+/* top-bar
+* ------------------------------------
+*/
+
+#top-bar {
+  background-color: #393939;
+  color: #fff;
+  font-size: 14px;
+}
+
+#top-bar .social-links {
+  font-size: 20px;
+}
+
+#top-bar .social-links i {
+  color: #fff;
+}
+
+/* navbar
+* ------------------------------------
+*/
+
+#navbar .nav-item .active {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #343a40;
+}
+
+#navbar .nav-item .nav-link:hover {
+  color: #007bff;
+}
+
+#navbar .searchbar {
+  height: 50px;
+  background-color: #393939;
+  border-radius: 30px;
+  padding: 5px;
+}
+
+#navbar .search_input {
+  border: 0;
+  outline: 0;
+  padding: 0 10px;
+  width: 100%;
+  background: none;
+  caret-color: #fff;
+  color: #fff;
+}
+#navbar .search_input::placeholder {
+  color: #fff;
+  opacity: 0.4;
+}
+
+#navbar .search_icon {
+  height: 40px;
+  width: 40px;
+  float: right;
+  justify-content: center;
+  background-color: inherit;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+}
+#navbar .search_icon,
+#navbar .search_icon:focus {
+  outline: none;
+  border: none;
+}
+#navbar .search_icon:hover {
+  position: relative;
+  top: 3px;
+}
+
+/* offcanvas navbar
+* ------------------------------------
+*/
+
+@media (max-width: 991.99px) {
+  .offcanvas-collapse {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding: 10px 30px;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: #fffafa;
+    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+  .offcanvas-collapse.open {
+    visibility: visible;
+    transform: translateX(-100%);
+  }
+}
+
+/* slogan
+* ------------------------------------
+*/
+
+#slogan {
+  background-color: #edefee;
+}
+
+#slogan .col-9 {
+  font-size: 22px;
+}
+@media (max-width: 768px) {
+  #slogan .col-9 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+/* bloglar - Haberler
+* ------------------------------------
+*/
+
+.blog-info {
+  border-bottom: rgba(0, 0, 0, 0.25) 1px solid;
+  margin-bottom: 10px;
+}
+.blog-date,
+.blog-writer,
+.blog-comments,
+.haber-category {
+  display: inline-block;
+  font-size: 0.9em;
+}
+.blog-date::before,
+.blog-writer::before,
+.blog-comments::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+}
+.blog-date::before {
+  content: "\f073";
+  padding-right: 10px;
+}
+.blog-writer::before {
+  content: "\f007";
+  margin-left: 20px;
+  padding-right: 10px;
+}
+.blog-comments::before {
+  content: "\f075";
+  margin-left: 20px;
+  padding-right: 10px;
+}
+.haber-category::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f02c";
+  margin-left: 20px;
+  padding-right: 10px;
+}
+
+/* referanslar
+* ------------------------------------
+*/
+
+#referanslar {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#referanslar img {
+  width: 230px;
+  margin: 1px;
+}
+
+/* cta
+* ------------------------------------
+*/
+#cta {
+  background-color: #fed700;
+}
+#cta input#Name {
+  border-radius: 10px 0px 0px 0px;
+}
+#cta input#Email {
+  border-radius: 0px 0px 0px 10px;
+}
+#cta button {
+  border-radius: 0px 10px 10px 0px;
+}
+
+/* footer
+* ------------------------------------
+*/
+
+#footer {
+  font-size: 14px;
+}
+#footer h3,
+#footer i,
+#footer a:hover,
+#footer .active {
+  color: #6ec1e4;
+}
+#footer i {
+  margin-right: 10px;
+  padding-top: 5px;
+}
+#footer ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+#footer ul li {
+  display: flex;
+}
+#footer a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/* sub-footer
+* ------------------------------------
+*/
+
+#sub-footer .social-links {
+  font-size: 22px;
+}
+#sub-footer a {
+  color: inherit;
+  text-decoration: inherit;
+}
+#sub-footer a:hover {
+  color: #6ec1e4;
+}
+
+/* hakkimida sayfa
+* ------------------------------------
+*/
+
+#hakkimizda-banner {
+  background-image: url("../img/hakkimizda-banner.jpg");
+}
+
+/* Bloglar sayfa
+* ------------------------------------
+*/
+
+#bloglar-banner {
+  background-image: url("../img/Blogging-Banner.jpg");
+}
+
+/* blog-detay
+* ------------------------------------
+*/
+#blog-detay .col-md-4 {
+  border-left: solid 1px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 768px) {
+  #blog-detay .col-md-4 {
+    border-top: solid 1px rgba(0, 0, 0, 0.25);
+    border-left: none;
+  }
+}
+#blog-detay a {
+  color: inherit;
+  text-decoration: inherit;
+}
+#blog-detay a:hover {
+  color: #00f;
+}
+
+#blog-detay .input-group-text {
+  width: 100px;
+}
+
+/* Galeri sayfa
+* ------------------------------------
+*/
+
+#galeri-banner {
+  background-image: url("../img/gallery-banner.jpg");
+}
+#galeri {
+  background-color: #39393939;
+}
+#galeri img:hover {
+  cursor: pointer;
+}
+
+/* Hesaplamalar sayfa
+* ------------------------------------
+*/
+
+#hesaplamalar-banner {
+  background-image: url("../img/hesaplamalar-banner.jpg");
+}
+#hesap-makinası .calculator {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#hesap-makinası .calculator-screen {
+  width: 100%;
+  height: 80px;
+  border: none;
+  background-color: #252525;
+  color: #fff;
+  text-align: right;
+  padding-right: 20px;
+  padding-left: 10px;
+  font-size: 4rem;
+}
+
+#hesap-makinası button {
+  height: 60px;
+  font-size: 2rem !important;
+}
+
+#hesap-makinası .equal-sign {
+  height: 98%;
+  grid-area: 2 / 4 / 6 / 5;
+}
+
+#hesap-makinası .calculator-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+#hesaplama button {
+  width: 40px;
+}
+
+/* Haberler sayfa
+* ------------------------------------
+*/
+
+#haberler-banner {
+  background-image: url("../img/haber-banner.jpg");
+}
+#haberler .blog-info a {
+  color: inherit;
+  text-decoration: inherit;
+}
+#haberler .blog-info a:hover {
+  color: #00f;
+}
+
+
+/* İletişim Sayfası
+* ------------------------------------
+*/
+
+#iletisim-banner {
+  background-image: url('../img/contact-banner.jpeg');
+  margin: 0px;
+}
+
+#iletisim .input-group-text{
+  width: 150px;
+}
+
+#iletisim a {
+  color: inherit;
+  text-decoration: inherit;
+}
+#iletisim  a:hover {
+  color: #00f;
+}
+#iletisim i{
+  padding-right: 20px;
+}
